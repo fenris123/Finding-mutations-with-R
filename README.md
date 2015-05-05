@@ -1,4 +1,4 @@
-# Finding-mutations-with-RT
+# Finding mutations with R
 
 This script compares DNA secuences and found mutations.
 
