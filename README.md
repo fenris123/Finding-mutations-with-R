@@ -13,12 +13,7 @@ This script it's designed to search for point mutations in a specific gene.
 
 This script will take your FASTA file, extract the secuence, and compare it  with the secuences of all the FASTA files inside a directory to search mutations.
 
+After finding a point mutation, the program check the next 15 nucleotides. If there is no diferences with the model, the program asume that the read pattern it's not afected and will continue.
 
-
-
-Actually, the program will stop inthe first mutation of every FASTA file. It evaluates if this mutation affect or not the reading frame
-
-To this it compares if the length (number of nucleotides) it's the same or not. 
-
-If there it's a mutation and the lengths are diferent, we asume that these diference it's originated by the mutation.
+If there is whatever difference on these 15 nucleotides, the program assumes that the reading frame could be compromised. it gives a warning and stop the analisis of this gene.
 
